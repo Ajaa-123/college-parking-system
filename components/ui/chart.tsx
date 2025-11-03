@@ -104,8 +104,8 @@ ${colorConfig
 
 const ChartTooltip = RechartsPrimitive.Tooltip
 
-function ChartTooltipContent<ValueType = number, NameType = string>(
-  props: TooltipProps<ValueType, NameType>
+function ChartTooltipContent(
+  props: TooltipProps<(string | number)[], string>
 ) {
   const {
     active,
